@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 /**
  * Unit test for simple App.
@@ -19,8 +21,8 @@ public class AppTest
         assertTrue( true );
     }
     @ParameterizedTest
-    @CsvFileSource(resources = "/inputValidation.csv", numLinesToSkip = 1)
-    void inputValidationTests(String[] input, String expected) {
+    @CsvFileSource({"[\"New York\", \"Los Angeles\", \"2024-03-14\", \"2024-03-15\", \"08:00\", \"17:00\"]", ""})
+    void inputValidationTests(String[] input, boolean expected) {
         Flight_search flight = new Flight_search();
         boolean actualValue = flight.inputValidation(input);
         assertEquals(expected, actualValue);

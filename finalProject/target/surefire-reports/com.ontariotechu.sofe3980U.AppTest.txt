@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.ontariotechu.sofe3980U.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
+inputValidationTests{String[], boolean}  Time elapsed: 0.047 s  <<< ERROR!
+org.junit.platform.commons.PreconditionViolationException: Classpath resource [/inputValidation.csv] does not exist
+

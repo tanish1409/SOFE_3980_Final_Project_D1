@@ -1,0 +1,13 @@
+﻿Input,Output
+["New York", "Los Angeles", "2024-03-14", "2024-03-15", "08:00", "17:00"],true
+["ABCD", "Los Angeles", "2024-03-14", "2024-03-15", "08:00", "17:00"],false
+["New York", "ABCD", "2024-03-14", "2024-03-15", "08:00", "17:00"],false
+["New York", "Los Angeles", "2024-03-14", "2024-03-15", " ", "08:00"],true
+["New York", "Los Angeles", "2024-03-14", "2024-03-15", "08:00", " "],true
+[" ", "Los Angeles", "2024-03-14", "2024-03-15", "08:00", "17:00"],false
+["New York", " ", "2024-03-14", "2024-03-15", "08:00", "17:00"],false
+["New York", "Los Angeles", " ", "2024-03-15", "08:00", "17:00"],false
+["New York", "Los Angeles", "2024-03-14", " ", "08:00", "17:00"],true
+["New York", "Los Angeles", "2024-03-14",  ",  "],true
+[New York", "Los Angeles", "2024-03-14", " ", "08:00", " "],true
+[New York", "Los Angeles", 2024-03-14",  ",  ",  "],true
