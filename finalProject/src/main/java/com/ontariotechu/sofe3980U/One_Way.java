@@ -5,7 +5,7 @@ public class One_Way {
         return false;
     }
 
-    public int calculateTotalTime(String[][] input){
+    public int calculateTotalTime(String[][] input) throws IllegalArgumentException{
         return -1;
     }
 }

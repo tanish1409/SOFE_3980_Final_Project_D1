@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.AppTest" time="0.171" tests="20" errors="0" skipped="0" failures="18">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.AppTest" time="0.346" tests="21" errors="0" skipped="0" failures="5">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire10589736180178333981\surefirebooter9016594658800410699.jar C:\Users\kunal\AppData\Local\Temp\surefire10589736180178333981 2024-03-15T20-09-48_912-jvmRun1 surefire13800845281274516360tmp surefire_08537756208615872128tmp"/>
+    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire3172859248815297125\surefirebooter2010787292283509367.jar C:\Users\kunal\AppData\Local\Temp\surefire3172859248815297125 2024-03-15T20-35-02_599-jvmRun1 surefire2225098736825892764tmp surefire_07965623492961170638tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire10589736180178333981\surefirebooter9016594658800410699.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire3172859248815297125\surefirebooter2010787292283509367.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,94 +56,43 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.031"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.01">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+  <testcase name="calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.083">
+    <failure message="expected:&lt;720&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<720> but was:<-1>
+	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeTest(AppTest.java:123)
+]]></failure>
+  </testcase>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.004">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
 	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
 ]]></failure>
   </testcase>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
-]]></failure>
-  </testcase>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
-]]></failure>
-  </testcase>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
-]]></failure>
-  </testcase>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
 	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 ]]></failure>
   </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[7]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[8]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[9]" classname="com.ontariotechu.sofe3980U.AppTest" time="0">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[10]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[11]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[12]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
-]]></failure>
-  </testcase>
-  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.006">
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[7]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[8]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[9]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[10]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[11]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[12]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.027">
     <failure message="The time format conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:43)
 ]]></failure>
   </testcase>
-  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
+  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
     <failure message="The time format conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:43)
 ]]></failure>

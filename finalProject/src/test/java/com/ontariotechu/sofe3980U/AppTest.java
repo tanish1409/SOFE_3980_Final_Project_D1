@@ -102,4 +102,85 @@ public class AppTest
         assertEquals(expectedResult, actualResult);
     }
 
+    @ParameterizedTest
+    @CsvFileSource(resources = "/calculateTotalTime.csv", numLinesToSkip = 1)
+    void calculateTotalTimeTest(String startLocation1, String endLocation1, String startTime1, String endTime1,
+                                String startDate1, String endDate1, String startLocation2, String endLocation2,
+                                String startTime2, String endTime2, String startDate2, String endDate2,
+                                int expectedTotalTime) {
+        One_Way flightPlanner = new One_Way();
+
+        // Construct the input from the CSV row
+        String[][] flightLegs = {
+                {startLocation1, endLocation1, startTime1, endTime1, startDate1, endDate1},
+                {startLocation2, endLocation2, startTime2, endTime2, startDate2, endDate2}
+        };
+
+        // Call the method under test
+        int actualTotalTime = flightPlanner.calculateTotalTime(flightLegs);
+
+        // Assert that the actual total time matches the expected total time
+        assertEquals(expectedTotalTime, actualTotalTime);
+    }
+
+    @Test
+    public void calculateTotalTimeShouldThrowExceptionForOverlappingFlights1() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "Paris", "09:00 AM", "12:00 PM", "2024-03-18", "2024-03-18"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 1.");
+    }
+
+    @Test
+    public void calculateTotalTimeShouldThrowExceptionForOverlappingFlights2() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "Paris", "05:10 PM", "9:00 PM", "2024-03-15", "2024-03-15"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 2.");
+    }
+
+    @Test
+    public void calculateTotalTimeShouldThrowExceptionForOverlappingFlights3() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-15", "2024-03-15"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 3.");
+    }
+
+    @Test
+    public void calculateTotalTimeShouldThrowExceptionForOverlappingFlights4() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "Idaho", "04:00 PM", "07:00 PM", "2024-03-15", "2024-03-15"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 4.");
+    }
+
+    @Test
+    public void calculateTotalTimeShouldThrowExceptionForOverlappingFlights5() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Toronto", "Idaho", "08:00 PM", "11:00 PM", "2024-03-15", "2024-03-15"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+    }
+
 }
