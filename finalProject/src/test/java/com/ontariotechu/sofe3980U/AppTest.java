@@ -261,4 +261,96 @@ public class AppTest
                 "calculateTotalTime should throw IllegalArgumentException for input 5.");
     }
 
+    @ParameterizedTest
+    @CsvFileSource(resources = "/validateFlightPlanRound.csv", numLinesToSkip = 1)
+    void validateFlightPlanRoundTripTests(String leg1StartLocation, String leg1EndLocation, String leg1StartTime, String leg1EndTime,
+                                 String leg1StartDate, String leg1EndDate, String leg2StartLocation, String leg2EndLocation,
+                                 String leg2StartTime, String leg2EndTime, String leg2StartDate, String leg2EndDate,
+                                 String leg3StartLocation, String leg3EndLocation, String leg3StartTime, String leg3EndTime,
+                                 String leg3StartDate, String leg3EndDate, boolean expectedResult) {
+        Round_Trip roundTrip = new Round_Trip();
+
+        // Construct the input directly from CSV row values
+        String[][] flightPlan = {
+                {leg1StartLocation, leg1EndLocation, leg1StartTime, leg1EndTime, leg1StartDate, leg1EndDate},
+                {leg2StartLocation, leg2EndLocation, leg2StartTime, leg2EndTime, leg2StartDate, leg2EndDate}
+        };
+
+        // Call the method under test
+        boolean actualResult = roundTrip.validateFlightPlan(flightPlan);
+
+        // Assert that the actual result matches the expected result
+        Assertions.assertEquals(expectedResult, actualResult, "The flight plan validation did not produce the expected result.");
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/calculateTotalTimeRound.csv", numLinesToSkip = 1)
+    void calculateTotalTimeRoundTripTest(String startLocation1, String endLocation1, String startTime1, String endTime1,
+                                String startDate1, String endDate1, String startLocation2, String endLocation2,
+                                String startTime2, String endTime2, String startDate2, String endDate2,
+                                int expectedTotalTime) {
+        Round_Trip flightPlanner = new Round_Trip();
+
+        // Construct the input from the CSV row
+        String[][] flightLegs = {
+                {startLocation1, endLocation1, startTime1, endTime1, startDate1, endDate1},
+                {startLocation2, endLocation2, startTime2, endTime2, startDate2, endDate2}
+        };
+
+        // Call the method under test
+        int actualTotalTime = flightPlanner.calculateTotalTime(flightLegs);
+
+        // Assert that the actual total time matches the expected total time
+        assertEquals(expectedTotalTime, actualTotalTime);
+    }
+
+    @Test
+    public void calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1() {
+        Round_Trip roundTrip = new Round_Trip();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "Idaho", "04:00 PM", "07:00 PM", "2024-03-15", "2024-03-15"},
+                {"Idaho", "New York", "06:00 PM", "07:00 PM", "2024-03-19", "2024-03-19"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> roundTrip.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 1.");
+    }
+
+    @Test
+    public void calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2() {
+        Round_Trip roundTrip = new Round_Trip();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "Idaho", "05:15 PM", "08:15 PM", "2024-03-15", "2024-03-15"},
+                {"Idaho", "New York", "06:00 PM", "07:00 PM", "2024-03-19", "2024-03-19"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> roundTrip.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 2.");
+    }
+
+    @Test
+    public void calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3() {
+        Round_Trip roundTrip = new Round_Trip();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "Idaho", "05:15 PM", "08:15 PM", "2024-03-17", "2024-03-17"},
+                {"Idaho", "New York", "06:00 PM", "07:00 PM", "2024-03-19", "2024-03-19"}
+        };
+
+        assertThrows(IllegalArgumentException.class, () -> roundTrip.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 3.");
+    }
+
+    @Test
+    public void calculateTotalTimeRoundTripNull() {
+        Round_Trip roundTrip = new Round_Trip();
+        String[][] input = {{}};
+
+        assertThrows(IllegalArgumentException.class, () -> roundTrip.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+    }
+
+
 }
