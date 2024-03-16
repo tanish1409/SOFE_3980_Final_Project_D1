@@ -4,17 +4,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(MockitoExtension.class)
 class TimeFormatPreferenceIntegrationTest {
 
     @Mock
-    private TicketGenerator ticketGenerator;
+    private Ticket_Generator ticketGenerator;
 
     @Test
     void test24HourFormatPreference() {

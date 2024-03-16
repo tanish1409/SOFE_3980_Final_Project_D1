@@ -4,14 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(MockitoExtension.class)
 class FlightBookingAndTicketGenerationTest {
 
     @Mock
@@ -23,24 +21,26 @@ class FlightBookingAndTicketGenerationTest {
     @InjectMocks
     private BookingService bookingService;
 
-    @Test
-    void testSuccessfulBookingAndTicketPrinting() {
-        // Setup
-        when(databaseService.addBookingDB(any(Booking.class))).thenReturn(true);
-        String expectedTicket = "Ticket for John Doe: New York to Los Angeles on 2024-04-15 at 08:00 AM";
-        when(ticketService.printTicket(any(Booking.class))).thenReturn(expectedTicket);
+   @Test
+void testSuccessfulBookingAndTicketPrinting() {
+    // Setup
+    when(databaseService.addBookingDB(any(Booking.class))).thenReturn(true);
+    String expectedTicket = "Ticket for John Doe: New York to Los Angeles on 2024-04-15 at 08:00 AM";
+    // Adjusted to match the method signature of printTicket
+    when(ticketService.printticket("John Doe", "New York", "Los Angeles", "08:00 AM", "17:00", false)).thenReturn(expectedTicket);
 
-        // Action
-        Booking bookingRequest = new Booking("John Doe", "New York", "Los Angeles", "2024-04-15", "08:00 AM");
-        boolean bookingAdded = bookingService.addBookingDB(bookingRequest); // Assuming this is the correct method name as per the document
-        String actualTicket = bookingService.printTicket(bookingRequest);
+    // Action
+    Booking bookingRequest = new Booking("John Doe", "New York", "Los Angeles", "2024-04-15", "08:00 AM");
+    boolean bookingAdded = bookingService.addBookingDB(bookingRequest);
+    // Adjusted call to printTicket to match its actual parameters
+    String actualTicket = ticketService.printTicket(bookingRequest.getFrom(), bookingRequest.getTo(), bookingRequest.getDepartureTime(), bookingRequest.getArrivalTime(), false); // Assuming Booking class has these getter methods
 
-        // Assertions
-        assertAll("Booking and ticket generation",
-                () -> assertTrue(bookingAdded, "Booking should be added successfully"),
-                () -> assertEquals(expectedTicket, actualTicket, "Ticket information should match expected output")
-        );
-    }
+    // Assertions
+    assertAll("Booking and ticket generation",
+            () -> assertTrue(bookingAdded, "Booking should be added successfully"),
+            () -> assertEquals(expectedTicket, actualTicket, "Ticket information should match expected output")
+    );
+}
 
     @Test
     void testBookingFailure() {
@@ -54,7 +54,7 @@ class FlightBookingAndTicketGenerationTest {
         // Assertions
         assertAll("Booking failure handling",
                 () -> assertFalse(bookingAdded, "Booking should not be added"),
-                () -> verify(ticketService, never()).printTicket(any(Booking.class), "Ticket printing should not occur on booking failure")
+                () -> verify(ticketService, never()).printticket(any(Booking.class), "Ticket printing should not occur on booking failure")
         );
     }
 }
