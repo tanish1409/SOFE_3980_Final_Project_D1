@@ -1,56 +1,76 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.AppTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 0.18 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
-inputValidationTests{String, String, String, String, String, String, boolean}[2]  Time elapsed: 0.012 s  <<< FAILURE!
+Tests run: 20, Failures: 18, Errors: 0, Skipped: 0, Time elapsed: 0.171 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
+validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]  Time elapsed: 0.01 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
+
+validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
+
+validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
+
+validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
+
+validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
+
+inputValidationTests{String, String, String, String, String, String, boolean}[2]  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
 inputValidationTests{String, String, String, String, String, String, boolean}[3]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[4]  Time elapsed: 0.002 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[4]  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[5]  Time elapsed: 0.002 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[5]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[6]  Time elapsed: 0.001 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[6]  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[7]  Time elapsed: 0.002 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[7]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[8]  Time elapsed: 0.002 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[8]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[9]  Time elapsed: 0.002 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[9]  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[10]  Time elapsed: 0 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[10]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[11]  Time elapsed: 0.003 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[11]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
 inputValidationTests{String, String, String, String, String, String, boolean}[12]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:29)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
 
-timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.01 s  <<< FAILURE!
+timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.006 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
-	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:48)
+	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:43)
 
-timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.001 s  <<< FAILURE!
+timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
-	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:48)
+	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:43)
 
