@@ -1,24 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.AppTest
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.346 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
-calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]  Time elapsed: 0.083 s  <<< FAILURE!
+Tests run: 23, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.169 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
+convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.041 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
+	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:219)
+
+convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
+	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:219)
+
+calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: expected:<720> but was:<-1>
-	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeTest(AppTest.java:123)
+	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeTest(AppTest.java:124)
 
-validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.004 s  <<< FAILURE!
+validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
-	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:102)
+	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:103)
 
-inputValidationTests{String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.003 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
-	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:24)
+	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:25)
 
-timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.027 s  <<< FAILURE!
+timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
-	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:43)
+	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:44)
 
 timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
-	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:43)
+	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:44)
 

@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -180,6 +181,83 @@ public class AppTest
         };
 
         assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+    }
+
+    @Test
+    public void calculateTotalTimeNull() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {{}};
+
+        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
+                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/convertTime.csv", numLinesToSkip = 1)
+    void convertTimeTests(int hr12, int hr24,
+                          String leg1StartLocation, String leg1EndLocation, String leg1StartTime, String leg1EndTime,
+                          String leg1StartDate, String leg1EndDate, String leg2StartLocation, String leg2EndLocation,
+                          String leg2StartTime, String leg2EndTime, String leg2StartDate, String leg2EndDate,
+                          String expectedLeg1StartLocation, String expectedLeg1EndLocation, String expectedLeg1StartTime,
+                          String expectedLeg1EndTime, String expectedLeg1StartDate, String expectedLeg1EndDate,
+                          String expectedLeg2StartLocation, String expectedLeg2EndLocation, String expectedLeg2StartTime,
+                          String expectedLeg2EndTime, String expectedLeg2StartDate, String expectedLeg2EndDate) {
+        Ticket_Generator timeConverter = new Ticket_Generator();
+
+        String[][] input = {
+                {leg1StartLocation, leg1EndLocation, leg1StartTime, leg1EndTime, leg1StartDate, leg1EndDate},
+                {leg2StartLocation, leg2EndLocation, leg2StartTime, leg2EndTime, leg2StartDate, leg2EndDate}
+        };
+        String[][] expected = {
+                {expectedLeg1StartLocation, expectedLeg1EndLocation, expectedLeg1StartTime, expectedLeg1EndTime, expectedLeg1StartDate, expectedLeg1EndDate},
+                {expectedLeg2StartLocation, expectedLeg2EndLocation, expectedLeg2StartTime, expectedLeg2EndTime, expectedLeg2StartDate, expectedLeg2EndDate}
+        };
+
+        String[][] actual = timeConverter.convertTime(hr12, hr24, input);
+
+        Assertions.assertArrayEquals(expected, actual, "The conversion did not produce the expected result.");
+    }
+
+    @Test
+    public void convertTimeInvalidArg1() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-19", "2024-03-19"}
+        };
+        int hr12 = 0;
+        int hr24 = 0;
+
+        assertThrows(IllegalArgumentException.class, () -> Ticket_Generator.convertTime(hr12, hr24, input),
+                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+    }
+
+    @Test
+    public void convertTimeInvalidArg2() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-19", "2024-03-19"}
+        };
+        int hr12 = 1;
+        int hr24 = 1;
+
+        assertThrows(IllegalArgumentException.class, () -> Ticket_Generator.convertTime(hr12, hr24, input),
+                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+    }
+
+    @Test
+    public void convertTimeInvalidArg3() {
+        One_Way oneWay = new One_Way();
+        String[][] input = {
+                {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
+                {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-19", "2024-03-19"}
+        };
+        int hr12 = -1;
+        int hr24 = -1;
+
+        assertThrows(IllegalArgumentException.class, () -> Ticket_Generator.convertTime(hr12, hr24, input),
                 "calculateTotalTime should throw IllegalArgumentException for input 5.");
     }
 
