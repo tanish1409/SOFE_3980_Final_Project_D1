@@ -30,7 +30,6 @@ public class Ticket_Generator {
         int hour = Integer.parseInt(parts[0]);
         String minutes = parts[1];
         String amPm = "AM";
-
         if (hour == 0) {
             hour = 12;
         } else if (hour == 12) {

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.235 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest
-testSearchAndDisplayFlightsIntegration  Time elapsed: 0.234 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest
+testSearchAndDisplayFlightsIntegration  Time elapsed: 0.104 s  <<< ERROR!
 org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
 
 Misplaced or misused argument matcher detected here:

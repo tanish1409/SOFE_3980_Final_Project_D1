@@ -8,8 +8,31 @@ public class Flight_search {
         return false;
     }
 
-    public String[][] timeFormat24(String[][] input) throws IllegalArgumentException{
-        return new String[0][];
+    public String[][] timeFormat24(String[][] input) throws IllegalArgumentException {
+        for (String[] flight : input) {
+            flight[2] = convert12HTo24H(flight[2]);
+            flight[3] = convert12HTo24H(flight[3]);
+        }
+        return input;
+    }
+
+    private String convert12HTo24H(String time12) throws IllegalArgumentException {
+        if (!time12.matches("(1[0-2]|0?[1-9]):[0-5][0-9] [AP]M")) {
+            throw new IllegalArgumentException("Invalid time format: " + time12);
+        }
+
+        String[] parts = time12.split("[: ]");
+        int hour = Integer.parseInt(parts[0]);
+        int minute = Integer.parseInt(parts[1]);
+        String amPm = parts[2];
+
+        if ("PM".equals(amPm) && hour < 12) {
+            hour += 12;
+        } else if ("AM".equals(amPm) && hour == 12) {
+            hour = 0;
+        }
+
+        return String.format("%02d:%02d", hour, minute);
     }
 
      public List<Flight> getFlights(String from, String to, String date, String startTime, String endTime) {
