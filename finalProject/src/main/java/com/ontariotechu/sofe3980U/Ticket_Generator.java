@@ -26,14 +26,21 @@ public class Ticket_Generator {
     }
 
     private String convertTo12HourFormat(String time) {
-        // basic conversions for mock, not actual implementation
-        if (time.equals("17:00")) {
-            return "05:00 PM";
-        } else if (time.equals("08:00")) {
-            return "08:00 AM";
+        String[] parts = time.split(":");
+        int hour = Integer.parseInt(parts[0]);
+        String minutes = parts[1];
+        String amPm = "AM";
+
+        if (hour == 0) {
+            hour = 12;
+        } else if (hour == 12) {
+            amPm = "PM";
+        } else if (hour > 12) {
+            hour -= 12;
+            amPm = "PM";
         }
-       
-        return time;
+
+        return String.format("%02d:%s %s", hour, minutes, amPm);
     }
 }
 

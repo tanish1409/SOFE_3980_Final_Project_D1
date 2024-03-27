@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.AppTest" time="0.182" tests="29" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.AppTest" time="0.419" tests="29" errors="0" skipped="0" failures="9">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\mockito\mockito-core\4.0.0\mockito-core-4.0.0.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.19\byte-buddy-agent-1.11.19.jar;C:\Users\kunal\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire2969730443259902978\surefirebooter16219098541534160766.jar C:\Users\kunal\AppData\Local\Temp\surefire2969730443259902978 2024-03-15T22-33-26_312-jvmRun1 surefire7666881731430187890tmp surefire_06115454116447102959tmp"/>
+    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire13804820160800913063\surefirebooter181235903930194435.jar C:\Users\kunal\AppData\Local\Temp\surefire13804820160800913063 2024-03-27T17-29-15_624-jvmRun1 surefire8429326904849761340tmp surefire_018286973241693250651tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\mockito\mockito-core\4.0.0\mockito-core-4.0.0.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.19\byte-buddy-agent-1.11.19.jar;C:\Users\kunal\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kunal"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire2969730443259902978\surefirebooter16219098541534160766.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire13804820160800913063\surefirebooter181235903930194435.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,67 +56,67 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.043">
+  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.124">
     <failure message="The conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:219)
 ]]></failure>
   </testcase>
-  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
+  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.006">
     <failure message="The conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:219)
 ]]></failure>
   </testcase>
-  <testcase name="calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003">
+  <testcase name="calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.006">
     <failure message="expected:&lt;720&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<720> but was:<-1>
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeTest(AppTest.java:124)
 ]]></failure>
   </testcase>
-  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
+  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.006">
     <failure message="The flight plan validation did not produce the expected result. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The flight plan validation did not produce the expected result. ==> expected: <true> but was: <false>
 	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanRoundTripTests(AppTest.java:283)
 ]]></failure>
   </testcase>
-  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
+  <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
   <testcase name="validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
 	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:103)
 ]]></failure>
   </testcase>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
   <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
 	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:25)
 ]]></failure>
   </testcase>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[7]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[8]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[7]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[8]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[9]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[10]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[11]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[12]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="calculateTotalTimeRoundTripTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
+  <testcase name="calculateTotalTimeRoundTripTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
     <failure message="expected:&lt;720&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<720> but was:<-1>
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripTest(AppTest.java:304)
 ]]></failure>
   </testcase>
-  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
+  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003">
     <failure message="The time format conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:44)
 ]]></failure>
   </testcase>
-  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001">
+  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
     <failure message="The time format conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The time format conversion did not produce the expected result. ==> array lengths differ, expected: <1> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.timeFormat24Tests(AppTest.java:44)
 ]]></failure>
