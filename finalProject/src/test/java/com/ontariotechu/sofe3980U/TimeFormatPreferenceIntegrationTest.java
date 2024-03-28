@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.Assertions;
+
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,7 +23,7 @@ class TimeFormatPreferenceIntegrationTest {
 
         String ticket = ticketGenerator.printTicket("New York", "Los Angeles", "08:00", "17:00", false);
 
-        assertEquals(expectedTicket, ticket);
+        Assertions.assertEquals(expectedTicket, ticket);
     }
 
     @Test
@@ -31,6 +33,6 @@ class TimeFormatPreferenceIntegrationTest {
 
         String ticket = ticketGenerator.printTicket("New York", "Los Angeles", "08:00", "17:00", true);
 
-        assertEquals(expectedTicket, ticket);
+        Assertions.assertEquals(expectedTicket, ticket);
     }
 }

@@ -11,6 +11,8 @@ import java.util.List;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions;
+
 
 class FlightPlanCreationAndValidationIntegrationTest {
 
@@ -44,7 +46,7 @@ class FlightPlanCreationAndValidationIntegrationTest {
 
         assertAll("Flight Plan Creation and Validation",
                 () -> assertTrue(validationResult, "The flight plan should be valid"),
-                () -> assertEquals(expectedTotalTime, actualTotalTime, "The total flight time should match the expected value")
+                () -> Assertions.assertEquals(expectedTotalTime, actualTotalTime, "The total flight time should match the expected value")
         );
     }
 

@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest
 testValidFlightPlanCreationAndValidation  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.FlightPlanService.addFlight(com.ontariotechu.sofe3980U.Flight)" because "this.flightPlanService" is null
-	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.lambda$testValidFlightPlanCreationAndValidation$0(FlightPlanCreationAndValidationIntegrationTest.java:35)
-	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.testValidFlightPlanCreationAndValidation(FlightPlanCreationAndValidationIntegrationTest.java:35)
+	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.lambda$testValidFlightPlanCreationAndValidation$0(FlightPlanCreationAndValidationIntegrationTest.java:37)
+	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.testValidFlightPlanCreationAndValidation(FlightPlanCreationAndValidationIntegrationTest.java:37)
 
-testInvalidFlightPlanCreationDueToCyclicPath  Time elapsed: 0.001 s  <<< ERROR!
+testInvalidFlightPlanCreationDueToCyclicPath  Time elapsed: 0.002 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.FlightPlanService.addFlight(com.ontariotechu.sofe3980U.Flight)" because "this.flightPlanService" is null
-	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.lambda$testInvalidFlightPlanCreationDueToCyclicPath$3(FlightPlanCreationAndValidationIntegrationTest.java:59)
-	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.testInvalidFlightPlanCreationDueToCyclicPath(FlightPlanCreationAndValidationIntegrationTest.java:59)
+	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.lambda$testInvalidFlightPlanCreationDueToCyclicPath$3(FlightPlanCreationAndValidationIntegrationTest.java:61)
+	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.testInvalidFlightPlanCreationDueToCyclicPath(FlightPlanCreationAndValidationIntegrationTest.java:61)
 

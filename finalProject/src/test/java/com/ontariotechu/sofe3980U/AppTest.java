@@ -1,13 +1,14 @@
 package com.ontariotechu.sofe3980U;
 
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
-import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+
 
 /**
  * Unit test for simple App.
@@ -22,7 +23,7 @@ public class AppTest
     void inputValidationTests(String startLoc, String endLoc, String startDate, String endDate, String startTime, String endTime, boolean expected) {
         Flight_search flight = new Flight_search();
         boolean actualValue = flight.inputValidation(startLoc, endLoc, startDate, endDate, startTime, endTime);
-        assertEquals(expected, actualValue);
+        Assertions.assertEquals(expected, actualValue);
     }
 
     @ParameterizedTest
@@ -47,40 +48,28 @@ public class AppTest
     @Test
     public void timeFormat24ErrorTest() {
         Flight_search flight = new Flight_search();
-
-        // The input that is expected to cause an error
         String[][] input = {{"London", "Paris", "09:30", "6:30 PM", "2024-03-14", "2024-03-15"}};
-
         assertThrows(IllegalArgumentException.class, () -> flight.timeFormat24(input), "Expected timeFormat24 to throw an exception due to incorrect time format.");
     }
 
     @Test
     public void timeFormat24ErrorTest1() {
         Flight_search flight = new Flight_search();
-
-        // The input that is expected to cause an error
         String[][] input = {{"London", "Paris", "09:30 AM", "6:30", "2024-03-14", "2024-03-15"}};
-
         assertThrows(IllegalArgumentException.class, () -> flight.timeFormat24(input), "Expected timeFormat24 to throw an exception due to incorrect time format.");
     }
 
     @Test
     public void timeFormat24ErrorTest2() {
         Flight_search flight = new Flight_search();
-
-        // The input that is expected to cause an error
         String[][] input = {{"New York", "Los Angeles", "-08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"}};
-
         assertThrows(IllegalArgumentException.class, () -> flight.timeFormat24(input), "Expected timeFormat24 to throw an exception due to incorrect time format.");
     }
 
     @Test
     public void timeFormat24ErrorTest3() {
         Flight_search flight = new Flight_search();
-
-        // The input that is expected to cause an error
         String[][] input = {{"New York", "Los Angeles", "08:00 AM", "-05:00 PM", "2024-03-14", "2024-03-15"}};
-
         assertThrows(IllegalArgumentException.class, () -> flight.timeFormat24(input), "Expected timeFormat24 to throw an exception due to incorrect time format.");
     }
 
@@ -100,7 +89,7 @@ public class AppTest
         boolean actualResult = flightPlanner.validateFlightPlan(plan);
 
         // Assert that the actual result matches the expected result
-        assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @ParameterizedTest
@@ -121,7 +110,7 @@ public class AppTest
         int actualTotalTime = flightPlanner.calculateTotalTime(flightLegs);
 
         // Assert that the actual total time matches the expected total time
-        assertEquals(expectedTotalTime, actualTotalTime);
+        Assertions.assertEquals(expectedTotalTime, actualTotalTime);
     }
 
     @Test
@@ -221,7 +210,7 @@ public class AppTest
 
     @Test
     public void convertTimeInvalidArg1() {
-        One_Way oneWay = new One_Way();
+        Ticket_Generator timeConverter = new Ticket_Generator();
         String[][] input = {
                 {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
                 {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-19", "2024-03-19"}
@@ -229,13 +218,13 @@ public class AppTest
         int hr12 = 0;
         int hr24 = 0;
 
-        assertThrows(IllegalArgumentException.class, () -> Ticket_Generator.convertTime(hr12, hr24, input),
-                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+        assertThrows(IllegalArgumentException.class, () -> timeConverter.convertTime(hr12, hr24, input),
+                "convertTime should throw IllegalArgumentException for invalid arguments.");
     }
 
     @Test
     public void convertTimeInvalidArg2() {
-        One_Way oneWay = new One_Way();
+        Ticket_Generator timeConverter = new Ticket_Generator();
         String[][] input = {
                 {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
                 {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-19", "2024-03-19"}
@@ -243,13 +232,13 @@ public class AppTest
         int hr12 = 1;
         int hr24 = 1;
 
-        assertThrows(IllegalArgumentException.class, () -> Ticket_Generator.convertTime(hr12, hr24, input),
-                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+        assertThrows(IllegalArgumentException.class, () -> timeConverter.convertTime(hr12, hr24, input),
+                "convertTime should throw IllegalArgumentException for invalid arguments.");
     }
 
     @Test
     public void convertTimeInvalidArg3() {
-        One_Way oneWay = new One_Way();
+        Ticket_Generator timeConverter = new Ticket_Generator();
         String[][] input = {
                 {"New York", "Los Angeles", "08:00 AM", "05:00 PM", "2024-03-14", "2024-03-15"},
                 {"Los Angeles", "New York", "08:00 PM", "11:00 PM", "2024-03-19", "2024-03-19"}
@@ -257,8 +246,8 @@ public class AppTest
         int hr12 = -1;
         int hr24 = -1;
 
-        assertThrows(IllegalArgumentException.class, () -> Ticket_Generator.convertTime(hr12, hr24, input),
-                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+        assertThrows(IllegalArgumentException.class, () -> timeConverter.convertTime(hr12, hr24, input),
+                "convertTime should throw IllegalArgumentException for invalid arguments.");
     }
 
     @ParameterizedTest
@@ -301,7 +290,7 @@ public class AppTest
         int actualTotalTime = flightPlanner.calculateTotalTime(flightLegs);
 
         // Assert that the actual total time matches the expected total time
-        assertEquals(expectedTotalTime, actualTotalTime);
+        Assertions.assertEquals(expectedTotalTime, actualTotalTime);
     }
 
     @Test
@@ -349,7 +338,7 @@ public class AppTest
         String[][] input = {{}};
 
         assertThrows(IllegalArgumentException.class, () -> roundTrip.calculateTotalTime(input),
-                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+                "calculateTotalTime should throw IllegalArgumentException for empty input.");
     }
 
 

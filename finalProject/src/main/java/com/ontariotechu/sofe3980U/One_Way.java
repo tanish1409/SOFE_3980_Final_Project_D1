@@ -8,4 +8,6 @@ public class One_Way {
     public int calculateTotalTime(String[][] input) throws IllegalArgumentException{
         return -1;
     }
+
+
 }

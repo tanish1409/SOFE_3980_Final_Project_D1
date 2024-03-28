@@ -9,6 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions;
+
 
 class FlightBookingAndTicketGenerationTest {
 
@@ -39,7 +41,7 @@ void testSuccessfulBookingAndTicketPrinting() {
     // Assertions
     assertAll("Booking and ticket generation",
             () -> assertTrue(bookingAdded, "Booking should be added successfully"),
-            () -> assertEquals(expectedTicket, actualTicket, "Ticket information should match expected output")
+            () -> Assertions.assertEquals(expectedTicket, actualTicket, "Ticket information should match expected output")
     );
 }
 
