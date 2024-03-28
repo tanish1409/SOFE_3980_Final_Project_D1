@@ -1,70 +1,66 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.AppTest
 -------------------------------------------------------------------------------
-Tests run: 46, Failures: 20, Errors: 0, Skipped: 0, Time elapsed: 0.414 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
-calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1  Time elapsed: 0.022 s  <<< FAILURE!
+Tests run: 46, Failures: 19, Errors: 0, Skipped: 0, Time elapsed: 0.256 s <<< FAILURE! - in com.ontariotechu.sofe3980U.AppTest
+calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1  Time elapsed: 0.014 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 1. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1(AppTest.java:307)
+	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1(AppTest.java:305)
 
-calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2  Time elapsed: 0.002 s  <<< FAILURE!
+calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 2. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2(AppTest.java:320)
+	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2(AppTest.java:318)
 
-calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3  Time elapsed: 0.002 s  <<< FAILURE!
+calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 3. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3(AppTest.java:333)
+	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3(AppTest.java:331)
 
-convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.05 s  <<< FAILURE!
+convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.022 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:208)
 
-convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.004 s  <<< FAILURE!
+convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
 	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:208)
 
-calculateTotalTimeShouldThrowExceptionForOverlappingFlights1  Time elapsed: 0.002 s  <<< FAILURE!
+calculateTotalTimeShouldThrowExceptionForOverlappingFlights1  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 1. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeShouldThrowExceptionForOverlappingFlights1(AppTest.java:124)
 
-calculateTotalTimeShouldThrowExceptionForOverlappingFlights2  Time elapsed: 0.003 s  <<< FAILURE!
+calculateTotalTimeShouldThrowExceptionForOverlappingFlights2  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 2. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeShouldThrowExceptionForOverlappingFlights2(AppTest.java:136)
 
-calculateTotalTimeShouldThrowExceptionForOverlappingFlights3  Time elapsed: 0.003 s  <<< FAILURE!
+calculateTotalTimeShouldThrowExceptionForOverlappingFlights3  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 3. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeShouldThrowExceptionForOverlappingFlights3(AppTest.java:148)
 
-calculateTotalTimeShouldThrowExceptionForOverlappingFlights4  Time elapsed: 0.003 s  <<< FAILURE!
+calculateTotalTimeShouldThrowExceptionForOverlappingFlights4  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 4. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeShouldThrowExceptionForOverlappingFlights4(AppTest.java:160)
 
-calculateTotalTimeShouldThrowExceptionForOverlappingFlights5  Time elapsed: 0.003 s  <<< FAILURE!
+calculateTotalTimeShouldThrowExceptionForOverlappingFlights5  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 5. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeShouldThrowExceptionForOverlappingFlights5(AppTest.java:172)
 
-calculateTotalTimeNull  Time elapsed: 0.003 s  <<< FAILURE!
+calculateTotalTimeNull  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for input 5. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeNull(AppTest.java:181)
 
-calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]  Time elapsed: 0.005 s  <<< FAILURE!
+calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <720> but was: <-1>
 	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeTest(AppTest.java:113)
 
-validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.004 s  <<< FAILURE!
+validateFlightPlanRoundTripTests{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: The flight plan validation did not produce the expected result. ==> expected: <true> but was: <false>
 	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanRoundTripTests(AppTest.java:272)
 
-validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.001 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.ontariotechu.sofe3980U.AppTest.validateFlightPlanTest(AppTest.java:92)
-
-inputValidationTests{String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.001 s  <<< FAILURE!
+inputValidationTests{String, String, String, String, String, String, boolean}[1]  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:26)
 
 calculateTotalTimeRoundTripNull  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: calculateTotalTime should throw IllegalArgumentException for empty input. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripNull(AppTest.java:342)
+	at com.ontariotechu.sofe3980U.AppTest.calculateTotalTimeRoundTripNull(AppTest.java:340)
 
 calculateTotalTimeRoundTripTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <720> but was: <-1>
@@ -78,7 +74,7 @@ convertTimeInvalidArg2  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: convertTime should throw IllegalArgumentException for invalid arguments. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.convertTimeInvalidArg2(AppTest.java:235)
 
-convertTimeInvalidArg3  Time elapsed: 0.001 s  <<< FAILURE!
+convertTimeInvalidArg3  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: convertTime should throw IllegalArgumentException for invalid arguments. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at com.ontariotechu.sofe3980U.AppTest.convertTimeInvalidArg3(AppTest.java:249)
 
