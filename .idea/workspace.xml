@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5544284a-1ad5-4c54-99f1-d36a15ff16fc" name="Changes" comment="Convert all Junit code to Junit5. Ensure all tests are being executed">
+    <list default="true" id="5544284a-1ad5-4c54-99f1-d36a15ff16fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/One_Way.java" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/One_Way.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/One_Way.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/One_Way.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/test-classes/com/ontariotechu/sofe3980U/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/test-classes/com/ontariotechu/sofe3980U/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/test-classes/validateFlightPlan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/test-classes/validateFlightPlan.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +78,7 @@
       <workItem from="1710539662230" duration="426000" />
       <workItem from="1711417647602" duration="1391000" />
       <workItem from="1711501187690" duration="8015000" />
-      <workItem from="1711581061657" duration="6439000" />
+      <workItem from="1711581061657" duration="7316000" />
     </task>
     <task id="LOCAL-00001" summary="fix test compilation errors">
       <option name="closed" value="true" />
@@ -118,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711585482295</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement validateFlightPlan() for One_Way class">
+      <option name="closed" value="true" />
+      <created>1711588202758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711588202758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +133,7 @@
     <MESSAGE value="fix test compilation errors" />
     <MESSAGE value="Implement timeFormat24(). Add helper function for above" />
     <MESSAGE value="Convert all Junit code to Junit5. Ensure all tests are being executed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert all Junit code to Junit5. Ensure all tests are being executed" />
+    <MESSAGE value="Implement validateFlightPlan() for One_Way class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement validateFlightPlan() for One_Way class" />
   </component>
 </project>
