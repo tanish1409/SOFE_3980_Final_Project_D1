@@ -178,8 +178,10 @@ public class AppTest
         One_Way oneWay = new One_Way();
         String[][] input = {{}};
 
-        assertThrows(IllegalArgumentException.class, () -> oneWay.calculateTotalTime(input),
-                "calculateTotalTime should throw IllegalArgumentException for input 5.");
+        // Expect IllegalArgumentException to be thrown
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            oneWay.calculateTotalTime(input);
+        });
     }
 
     @ParameterizedTest

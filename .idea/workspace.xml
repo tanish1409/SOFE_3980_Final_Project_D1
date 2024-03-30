@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5544284a-1ad5-4c54-99f1-d36a15ff16fc" name="Changes" comment="">
+    <list default="true" id="5544284a-1ad5-4c54-99f1-d36a15ff16fc" name="Changes" comment="Implement validateFlightPlan() for One_Way class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/One_Way.java" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/One_Way.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/src/test/java/com/ontariotechu/sofe3980U/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/test/java/com/ontariotechu/sofe3980U/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/src/test/resources/calculateTotalTime.csv" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/test/resources/calculateTotalTime.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/One_Way.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/One_Way.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/test-classes/calculateTotalTime.csv" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/test-classes/calculateTotalTime.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/target/test-classes/com/ontariotechu/sofe3980U/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/test-classes/com/ontariotechu/sofe3980U/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +56,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.default.executor": "Run",
-    "Maven.Unnamed.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kunal/Documents/GitHub/SOFE_3980_Final_Project_D1/finalProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.default.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kunal/Documents/GitHub/SOFE_3980_Final_Project_D1/finalProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,6 +95,8 @@
       <workItem from="1711417647602" duration="1391000" />
       <workItem from="1711501187690" duration="8015000" />
       <workItem from="1711581061657" duration="7316000" />
+      <workItem from="1711738533261" duration="2601000" />
+      <workItem from="1711836253127" duration="3131000" />
     </task>
     <task id="LOCAL-00001" summary="fix test compilation errors">
       <option name="closed" value="true" />

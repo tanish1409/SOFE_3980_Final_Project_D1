@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class One_Way {
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm a");
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
 
     public boolean validateFlightPlan(String[][] flights) {
         if (flights == null || flights.length == 0) {
@@ -15,9 +15,8 @@ public class One_Way {
             // Loop through each flight starting from the second one
             for (int i = 1; i < flights.length; i++) {
                 // Parse the dates and times
-                Date previousArrivalDate = dateFormat.parse(flights[i - 1][5] + " " + flights[i - 1][3]); // Use index 5 for arrive_date, 3 for arrive_time
-                Date currentDepartureDate = dateFormat.parse(flights[i][4] + " " + flights[i][2]); // Use index 4 for depart_date, 2 for depart_time
-
+                Date previousArrivalDate = dateFormat.parse(flights[i - 1][5] + " " + flights[i - 1][3]);
+                Date currentDepartureDate = dateFormat.parse(flights[i][4] + " " + flights[i][2]);
 
                 // Check if start destination of the current flight is the same as the end destination of the previous flight
                 if (!flights[i - 1][1].equals(flights[i][0])) {
@@ -46,10 +45,34 @@ public class One_Way {
         }
 
         return true;
+
     }
 
-    public int calculateTotalTime(String[][] input) throws IllegalArgumentException{
-        return -1;
+    public int calculateTotalTime(String[][] flights) throws IllegalArgumentException {
+        if (flights == null || flights.length == 0 || flights[0].length == 0) {
+            throw new IllegalArgumentException("Flight plan cannot be empty");
+        }
+
+        if (!validateFlightPlan(flights)) {
+            throw new IllegalArgumentException("Invalid flight plan");
+        }
+
+        int totalTimeInMinutes = 0;
+        try {
+            for (String[] flight : flights) {
+                Date departTime = dateFormat.parse(flight[4] + " " + flight[2]);
+                Date arriveTime = dateFormat.parse(flight[5] + " " + flight[3]);
+
+                // Calculate the flight duration in milliseconds and convert it to minutes.
+                long flightDuration = arriveTime.getTime() - departTime.getTime();
+                totalTimeInMinutes += flightDuration / (60 * 1000);
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+            throw new IllegalArgumentException("Error parsing flight dates/times");
+        }
+
+        return totalTimeInMinutes;
     }
 
 
