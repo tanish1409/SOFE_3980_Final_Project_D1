@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.ontariotechu.sofe3980U.FlightIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.027 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightIntegrationTest
+testFlightBookingAndTicketGenerationIntegration  Time elapsed: 0.014 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.ontariotechu.sofe3980U.FlightIntegrationTest.testFlightBookingAndTicketGenerationIntegration(FlightIntegrationTest.java:41)
+
+testSearchAndDisplayFlightsIntegration  Time elapsed: 0.013 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.ontariotechu.sofe3980U.FlightIntegrationTest.testSearchAndDisplayFlightsIntegration(FlightIntegrationTest.java:28)
+
+testFlightPlanCreationAndValidationIntegration  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.ontariotechu.sofe3980U.FlightIntegrationTest.testFlightPlanCreationAndValidationIntegration(FlightIntegrationTest.java:54)
+

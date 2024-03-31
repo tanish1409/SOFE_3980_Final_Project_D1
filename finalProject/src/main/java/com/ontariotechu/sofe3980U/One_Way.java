@@ -3,9 +3,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class One_Way {
+public class One_Way implements Flight_Book {
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
-
+    private String flightPlan[][];
     public boolean validateFlightPlan(String[][] flights) {
         if (flights == null || flights.length == 0) {
             return false;
@@ -48,6 +48,7 @@ public class One_Way {
 
     }
 
+
     public int calculateTotalTime(String[][] flights) throws IllegalArgumentException {
         if (flights == null || flights.length == 0 || flights[0].length == 0) {
             throw new IllegalArgumentException("Flight plan cannot be empty");
@@ -83,5 +84,35 @@ public class One_Way {
         return totalTimeInMinutes;
     }
 
+    public void displayAllFlights(String[][] flights) {
+        for (int i = 0; i < flights.length; i++) {
+            System.out.println("Flight " + (i + 1) + ":");
+            System.out.println("From: " + flights[i][0]);
+            System.out.println("To: " + flights[i][1]);
+            System.out.println("Departure Time: " + flights[i][2]);
+            System.out.println("Arrival Time: " + flights[i][3]);
+            System.out.println("Departure Date: " + flights[i][4]);
+            System.out.println("Arrival Date: " + flights[i][5]);
+            System.out.println();
+        }
+    }
+
+    @Override
+    public String chooseFlight(String[][] flights) {
+        return null;
+    }
+
+    @Override
+    public String[][] addFlight(String flight) {
+        return new String[0][];
+    }
+    @Override
+    public void addBookingDB(String[][] flight) {
+
+    }
+
+    public String[][] getFlights() {
+        return flightPlan;
+    }
 
 }

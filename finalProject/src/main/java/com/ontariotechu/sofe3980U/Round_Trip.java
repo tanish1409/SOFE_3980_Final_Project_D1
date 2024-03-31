@@ -4,11 +4,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Round_Trip {
+public class Round_Trip implements Flight_Book{
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
-
-    public boolean validateFlightPlan(String[][] flights){
+        public boolean validateFlightPlan(String[][] flights){
         if (flights == null || flights.length == 0) {
             return false;
         }
@@ -64,8 +63,7 @@ public class Round_Trip {
 
         return true;
     }
-
-    public int calculateTotalTime(String[][] flights) throws IllegalArgumentException{
+        public int calculateTotalTime(String[][] flights) throws IllegalArgumentException{
         if (flights == null || flights.length == 0 || flights[0].length == 0) {
             throw new IllegalArgumentException("Flight plan cannot be empty");
         }
@@ -110,5 +108,29 @@ public class Round_Trip {
         }
 
         return totalTimeInMinutes;
+    }
+    public void displayAllFlights(String[][] flights) {
+        for (int i = 0; i < flights.length; i++) {
+            System.out.println("Flight " + (i + 1) + ":");
+            System.out.println("From: " + flights[i][0]);
+            System.out.println("To: " + flights[i][1]);
+            System.out.println("Departure Time: " + flights[i][2]);
+            System.out.println("Arrival Time: " + flights[i][3]);
+            System.out.println("Departure Date: " + flights[i][4]);
+            System.out.println("Arrival Date: " + flights[i][5]);
+            System.out.println();
+        }
+    }
+
+    public String chooseFlight(String[][] flights) {
+        return null;
+    }
+
+    public String[][] addFlight(String flight) {
+        return new String[0][];
+    }
+
+    public void addBookingDB(String[][] flight) {
+
     }
 }

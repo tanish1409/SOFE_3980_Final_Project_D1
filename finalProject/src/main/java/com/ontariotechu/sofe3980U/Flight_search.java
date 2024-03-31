@@ -72,10 +72,4 @@ public class Flight_search {
 
         return String.format("%02d:%02d", hour, minute);
     }
-
-     public List<Flight> getFlights(String from, String to, String date, String startTime, String endTime) {
-        // Dummy implementation
-        // Return an example list of flights or mock data
-        return List.of(new Flight(from, to, date, startTime, endTime));
-    }
 }
