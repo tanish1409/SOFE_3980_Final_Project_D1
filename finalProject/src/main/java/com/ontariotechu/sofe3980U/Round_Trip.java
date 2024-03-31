@@ -65,7 +65,50 @@ public class Round_Trip {
         return true;
     }
 
-    public int calculateTotalTime(String[][] input) throws IllegalArgumentException{
-        return -1;
+    public int calculateTotalTime(String[][] flights) throws IllegalArgumentException{
+        if (flights == null || flights.length == 0 || flights[0].length == 0) {
+            throw new IllegalArgumentException("Flight plan cannot be empty");
+        }
+
+        if (!validateFlightPlan(flights)) {
+            throw new IllegalArgumentException("Invalid flight plan");
+        }
+
+        int totalTimeInMinutes = 0;
+        boolean isSecondLeg = false;
+
+        try {
+            for (int i = 0; i < flights.length; i++) {
+                Date departTime = dateFormat.parse(flights[i][4] + " " + flights[i][2]);
+                Date arriveTime = dateFormat.parse(flights[i][5] + " " + flights[i][3]);
+
+                // Calculate the flight duration in milliseconds and convert it to minutes.
+                long flightDuration = arriveTime.getTime() - departTime.getTime();
+                totalTimeInMinutes += flightDuration / (60 * 1000);
+
+                // If there's a next flight, check for a layover or the start of the second leg
+                if (i < flights.length - 1) {
+                    Date nextDepartTime = dateFormat.parse(flights[i + 1][4] + " " + flights[i + 1][2]);
+
+                    // Check if the next flight starts more than 24 hours later (start of the second leg)
+                    long timeDifference = nextDepartTime.getTime() - arriveTime.getTime();
+                    if (timeDifference > 24 * 60 * 60 * 1000) {
+                        if (!isSecondLeg) {
+                            // First occurrence of more than 24-hour difference, mark start of the second leg
+                            isSecondLeg = true;
+                        }
+                    } else {
+                        // If it's not the start of the second leg, calculate the layover duration and add to total time
+                        long layoverDuration = timeDifference;
+                        totalTimeInMinutes += layoverDuration / (60 * 1000);
+                    }
+                }
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+            throw new IllegalArgumentException("Error parsing flight dates/times");
+        }
+
+        return totalTimeInMinutes;
     }
 }
