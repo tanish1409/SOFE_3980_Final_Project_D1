@@ -1,11 +1,50 @@
-
 package com.ontariotechu.sofe3980U;
 
 import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
 
 public class Flight_search {
-    public boolean inputValidation(String startLoc, String endLoc, String startDate, String endDate, String startTime, String endTime){
-        return false;
+
+    private SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    private Set<String> validCities = new HashSet<>(Arrays.asList("New York", "Toronto", "Idaho", "Los Angeles"));
+    public boolean inputValidation(String[] flight){
+
+        if (flight == null || flight.length < 6) {
+            return false;
+        }
+
+        for (String field : flight) {
+            if (field == null || field.trim().isEmpty()) {
+                return false;
+            }
+        }
+
+        Date now = new Date(); // Current date and time for future date validation
+
+        // Validate start and end locations
+        if (!validCities.contains(flight[0]) || !validCities.contains(flight[1])) {
+            return false;
+        }
+
+        // Validate that start and end dates and times are in the future and end is after start
+        try {
+            Date startTime = dateTimeFormat.parse(flight[4] + " " + flight[2]);
+            Date endTime = dateTimeFormat.parse(flight[5] + " " + flight[3]);
+            if (!endTime.after(startTime)) {
+                return false;
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
     }
 
     public static void timeFormat24(String[][] input) throws IllegalArgumentException {

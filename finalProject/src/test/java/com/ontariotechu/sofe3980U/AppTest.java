@@ -21,8 +21,9 @@ public class AppTest
     @ParameterizedTest
     @CsvFileSource(resources = "/inputValidation.csv", numLinesToSkip = 1)
     void inputValidationTests(String startLoc, String endLoc, String startDate, String endDate, String startTime, String endTime, boolean expected) {
-        Flight_search flight = new Flight_search();
-        boolean actualValue = flight.inputValidation(startLoc, endLoc, startDate, endDate, startTime, endTime);
+        Flight_search fs = new Flight_search();
+        String[] flight = {startLoc, endLoc, startTime, endTime, startDate, endDate};
+        boolean actualValue = fs.inputValidation(flight);
         Assertions.assertEquals(expected, actualValue);
     }
 

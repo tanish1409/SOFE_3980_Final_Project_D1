@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest" time="0.003" tests="2" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest" time="0.001" tests="2" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire2051140183677885775\surefirebooter18075820005251252983.jar C:\Users\kunal\AppData\Local\Temp\surefire2051140183677885775 2024-03-30T21-47-24_719-jvmRun1 surefire5408300488789653122tmp surefire_016988206464682864905tmp"/>
+    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire11774976546167278044\surefirebooter13035152149802145409.jar C:\Users\kunal\AppData\Local\Temp\surefire11774976546167278044 2024-03-31T00-20-09_011-jvmRun1 surefire6919547249175509172tmp surefire_013743936797834060290tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\mockito\mockito-core\4.0.0\mockito-core-4.0.0.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.19\byte-buddy-agent-1.11.19.jar;C:\Users\kunal\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire2051140183677885775\surefirebooter18075820005251252983.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire11774976546167278044\surefirebooter13035152149802145409.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,13 +56,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testValidFlightPlanCreationAndValidation" classname="com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest" time="0.001">
+  <testcase name="testValidFlightPlanCreationAndValidation" classname="com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest" time="0">
     <error message="Cannot invoke &quot;com.ontariotechu.sofe3980U.FlightPlanService.addFlight(com.ontariotechu.sofe3980U.Flight)&quot; because &quot;this.flightPlanService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.FlightPlanService.addFlight(com.ontariotechu.sofe3980U.Flight)" because "this.flightPlanService" is null
 	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.lambda$testValidFlightPlanCreationAndValidation$0(FlightPlanCreationAndValidationIntegrationTest.java:37)
 	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.testValidFlightPlanCreationAndValidation(FlightPlanCreationAndValidationIntegrationTest.java:37)
 </error>
   </testcase>
-  <testcase name="testInvalidFlightPlanCreationDueToCyclicPath" classname="com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest" time="0.002">
+  <testcase name="testInvalidFlightPlanCreationDueToCyclicPath" classname="com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest" time="0.001">
     <error message="Cannot invoke &quot;com.ontariotechu.sofe3980U.FlightPlanService.addFlight(com.ontariotechu.sofe3980U.Flight)&quot; because &quot;this.flightPlanService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.FlightPlanService.addFlight(com.ontariotechu.sofe3980U.Flight)" because "this.flightPlanService" is null
 	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.lambda$testInvalidFlightPlanCreationDueToCyclicPath$3(FlightPlanCreationAndValidationIntegrationTest.java:61)
 	at com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.testInvalidFlightPlanCreationDueToCyclicPath(FlightPlanCreationAndValidationIntegrationTest.java:61)
