@@ -36,13 +36,13 @@ public class AppTest
         String[][] input = {{startLoc, endLoc, startTime, endTime, startDate, endDate}};
 
         // Call the method under test
-        String[][] actualOutput = flight.timeFormat24(input);
+        flight.timeFormat24(input);
 
         // Construct the expected output array from the CSV row
         String[][] expectedOutput = {{expectedStartLoc, expectedEndLoc, expectedStartTime, expectedEndTime, expectedStartDate, expectedEndDate}};
 
         // Assert that the actual output matches the expected output
-        assertArrayEquals(expectedOutput, actualOutput, "The time format conversion did not produce the expected result.");
+        assertArrayEquals(expectedOutput, input, "The time format conversion did not produce the expected result.");
     }
 
     @Test
@@ -205,9 +205,9 @@ public class AppTest
                 {expectedLeg2StartLocation, expectedLeg2EndLocation, expectedLeg2StartTime, expectedLeg2EndTime, expectedLeg2StartDate, expectedLeg2EndDate}
         };
 
-        String[][] actual = timeConverter.convertTime(hr12, hr24, input);
+        timeConverter.convertTime(hr12, hr24, input);
 
-        Assertions.assertArrayEquals(expected, actual, "The conversion did not produce the expected result.");
+        Assertions.assertArrayEquals(expected, input, "The conversion did not produce the expected result.");
     }
 
     @Test

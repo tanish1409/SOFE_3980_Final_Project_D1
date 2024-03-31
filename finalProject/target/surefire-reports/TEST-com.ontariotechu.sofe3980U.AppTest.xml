@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.AppTest" time="0.499" tests="46" errors="0" skipped="0" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.AppTest" time="0.337" tests="46" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire12176663085893697929\surefirebooter3421825717376713138.jar C:\Users\kunal\AppData\Local\Temp\surefire12176663085893697929 2024-03-30T20-50-43_359-jvmRun1 surefire3469108402350528379tmp surefire_09631746491173450242tmp"/>
+    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire2051140183677885775\surefirebooter18075820005251252983.jar C:\Users\kunal\AppData\Local\Temp\surefire2051140183677885775 2024-03-30T21-47-24_719-jvmRun1 surefire5408300488789653122tmp surefire_016988206464682864905tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\mockito\mockito-core\4.0.0\mockito-core-4.0.0.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.19\byte-buddy-agent-1.11.19.jar;C:\Users\kunal\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire12176663085893697929\surefirebooter3421825717376713138.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire2051140183677885775\surefirebooter18075820005251252983.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,42 +56,34 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="timeFormat24ErrorTest1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.05"/>
+  <testcase name="timeFormat24ErrorTest1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.043"/>
   <testcase name="timeFormat24ErrorTest2" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
-  <testcase name="timeFormat24ErrorTest3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.007"/>
-  <testcase name="calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.066">
-    <failure message="The conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
-	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:210)
-]]></failure>
-  </testcase>
-  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.004">
-    <failure message="The conversion did not produce the expected result. ==&gt; array lengths differ, expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: The conversion did not produce the expected result. ==> array lengths differ, expected: <2> but was: <0>
-	at com.ontariotechu.sofe3980U.AppTest.convertTimeTests(AppTest.java:210)
-]]></failure>
-  </testcase>
-  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights2" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights4" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights5" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="validateFlightPlanRoundTripTests2Flights{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.005"/>
-  <testcase name="validateFlightPlanRoundTripTests2Flights{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="calculateTotalTimeNull" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.004"/>
-  <testcase name="timeFormat24ErrorTest" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="validateFlightPlanRoundTripTests3Flights{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
+  <testcase name="timeFormat24ErrorTest3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.008"/>
+  <testcase name="calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights2" classname="com.ontariotechu.sofe3980U.AppTest" time="0.004"/>
+  <testcase name="calculateTotalTimeRoundTripShouldThrowExceptionForOverlappingFlights3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
+  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.026"/>
+  <testcase name="convertTimeTests{int, int, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights2" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights4" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeShouldThrowExceptionForOverlappingFlights5" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanRoundTripTests2Flights{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanRoundTripTests2Flights{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeNull" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="timeFormat24ErrorTest" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanRoundTripTests3Flights{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
   <testcase name="validateFlightPlanRoundTripTests3Flights{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="validateFlightPlanRoundTripTests3Flights{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
+  <testcase name="validateFlightPlanRoundTripTests3Flights{String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="validateFlightPlanTest{String, String, String, String, String, String, String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.011">
     <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.ontariotechu.sofe3980U.AppTest.inputValidationTests(AppTest.java:26)
 ]]></failure>
@@ -100,30 +92,18 @@
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[3]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[4]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
   <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[5]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[7]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[8]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[9]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[10]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[11]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[12]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
-  <testcase name="calculateTotalTimeRoundTripNull" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="calculateTotalTimeRoundTripTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.005"/>
-  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
-  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003"/>
-  <testcase name="convertTimeInvalidArg1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.005">
-    <failure message="convertTime should throw IllegalArgumentException for invalid arguments. ==&gt; Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: convertTime should throw IllegalArgumentException for invalid arguments. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.convertTimeInvalidArg1(AppTest.java:223)
-</failure>
-  </testcase>
-  <testcase name="convertTimeInvalidArg2" classname="com.ontariotechu.sofe3980U.AppTest" time="0.003">
-    <failure message="convertTime should throw IllegalArgumentException for invalid arguments. ==&gt; Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: convertTime should throw IllegalArgumentException for invalid arguments. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.convertTimeInvalidArg2(AppTest.java:237)
-</failure>
-  </testcase>
-  <testcase name="convertTimeInvalidArg3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002">
-    <failure message="convertTime should throw IllegalArgumentException for invalid arguments. ==&gt; Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: convertTime should throw IllegalArgumentException for invalid arguments. ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.ontariotechu.sofe3980U.AppTest.convertTimeInvalidArg3(AppTest.java:251)
-</failure>
-  </testcase>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[6]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[7]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[8]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[9]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[10]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[11]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="inputValidationTests{String, String, String, String, String, String, boolean}[12]" classname="com.ontariotechu.sofe3980U.AppTest" time="0"/>
+  <testcase name="calculateTotalTimeRoundTripNull" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="calculateTotalTimeRoundTripTest{String, String, String, String, String, String, String, String, String, String, String, String, int}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[1]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="timeFormat24Tests{String, String, String, String, String, String, String, String, String, String, String, String}[2]" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="convertTimeInvalidArg1" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
+  <testcase name="convertTimeInvalidArg2" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="convertTimeInvalidArg3" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
 </testsuite>

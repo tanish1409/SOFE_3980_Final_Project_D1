@@ -8,15 +8,14 @@ public class Flight_search {
         return false;
     }
 
-    public String[][] timeFormat24(String[][] input) throws IllegalArgumentException {
+    public static void timeFormat24(String[][] input) throws IllegalArgumentException {
         for (String[] flight : input) {
             flight[2] = convert12HTo24H(flight[2]);
             flight[3] = convert12HTo24H(flight[3]);
         }
-        return input;
     }
 
-    private String convert12HTo24H(String time12) throws IllegalArgumentException {
+    private static String convert12HTo24H(String time12) throws IllegalArgumentException {
         if (!time12.matches("(1[0-2]|0?[1-9]):[0-5][0-9] [AP]M")) {
             throw new IllegalArgumentException("Invalid time format: " + time12);
         }
