@@ -2,7 +2,7 @@
 Test set: com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest
 -------------------------------------------------------------------------------
 Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest
-test24HourFormatPreference  Time elapsed: 0 s  <<< ERROR!
+test24HourFormatPreference  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.Ticket_Generator.printTicket(String, String, String, String, boolean)" because "this.ticketGenerator" is null
 	at com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.test24HourFormatPreference(TimeFormatPreferenceIntegrationTest.java:22)
 

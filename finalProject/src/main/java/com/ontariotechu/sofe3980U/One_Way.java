@@ -59,13 +59,21 @@ public class One_Way {
 
         int totalTimeInMinutes = 0;
         try {
-            for (String[] flight : flights) {
-                Date departTime = dateFormat.parse(flight[4] + " " + flight[2]);
-                Date arriveTime = dateFormat.parse(flight[5] + " " + flight[3]);
+            for (int i = 0; i < flights.length; i++) {
+                Date departTime = dateFormat.parse(flights[i][4] + " " + flights[i][2]);
+                Date arriveTime = dateFormat.parse(flights[i][5] + " " + flights[i][3]);
 
-                // Calculate the flight duration in milliseconds and convert it to minutes.
+                // Calculate the flight duration and add to total time
                 long flightDuration = arriveTime.getTime() - departTime.getTime();
                 totalTimeInMinutes += flightDuration / (60 * 1000);
+
+                // If there's a next flight, calculate the layover time
+                if (i < flights.length - 1) {
+                    Date nextDepartTime = dateFormat.parse(flights[i + 1][4] + " " + flights[i + 1][2]);
+                    // Calculate the layover duration and add to total time
+                    long layoverDuration = nextDepartTime.getTime() - arriveTime.getTime();
+                    totalTimeInMinutes += layoverDuration / (60 * 1000);
+                }
             }
         } catch (ParseException e) {
             e.printStackTrace();

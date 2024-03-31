@@ -6,23 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5544284a-1ad5-4c54-99f1-d36a15ff16fc" name="Changes" comment="Implement calculatetotalTime() in One_Way">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/Round_Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/Round_Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/src/test/java/com/ontariotechu/sofe3980U/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/test/java/com/ontariotechu/sofe3980U/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/src/test/resources/validateFlightPlanRound.csv" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/test/resources/validateFlightPlanRound3Flights.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/One_Way.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/One_Way.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/Round_Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/classes/com/ontariotechu/sofe3980U/Round_Trip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/TEST-com.ontariotechu.sofe3980U.TimeFormatPreferenceIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightPlanCreationAndValidationIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/surefire-reports/com.ontariotechu.sofe3980U.FlightSearchAndDisplayServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/test-classes/com/ontariotechu/sofe3980U/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/target/test-classes/com/ontariotechu/sofe3980U/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject/target/test-classes/validateFlightPlanRound.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/One_Way.java" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/main/java/com/ontariotechu/sofe3980U/One_Way.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject/src/test/resources/calculateTotalTime.csv" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject/src/test/resources/calculateTotalTime.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +82,7 @@
       <workItem from="1711501187690" duration="8015000" />
       <workItem from="1711581061657" duration="7316000" />
       <workItem from="1711738533261" duration="2601000" />
-      <workItem from="1711836253127" duration="8159000" />
+      <workItem from="1711836253127" duration="8814000" />
     </task>
     <task id="LOCAL-00001" summary="fix test compilation errors">
       <option name="closed" value="true" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest" time="0.829" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest" time="0.91" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire6590241871913289220\surefirebooter13995456544543599596.jar C:\Users\kunal\AppData\Local\Temp\surefire6590241871913289220 2024-03-30T20-22-10_195-jvmRun1 surefire7580026003481795232tmp surefire_02034459411507449095tmp"/>
+    <property name="sun.java.command" value="C:\Users\kunal\AppData\Local\Temp\surefire17876738739600965891\surefirebooter7729156003750645986.jar C:\Users\kunal\AppData\Local\Temp\surefire17876738739600965891 2024-03-30T20-33-52_448-jvmRun1 surefire12708470068457663790tmp surefire_014269875036602467518tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\test-classes;C:\Users\kunal\Documents\GitHub\SOFE_3980_Final_Project_D1\finalProject\target\classes;C:\Users\kunal\.m2\repository\org\mockito\mockito-core\4.0.0\mockito-core-4.0.0.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.19\byte-buddy-agent-1.11.19.jar;C:\Users\kunal\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\kunal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\kunal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\kunal\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\kunal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire6590241871913289220\surefirebooter13995456544543599596.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kunal\AppData\Local\Temp\surefire17876738739600965891\surefirebooter7729156003750645986.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,7 +56,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testSuccessfulBookingAndTicketPrinting" classname="com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest" time="0.828">
+  <testcase name="testSuccessfulBookingAndTicketPrinting" classname="com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest" time="0.909">
     <error message="Cannot invoke &quot;com.ontariotechu.sofe3980U.DatabaseService.addBookingDB(com.ontariotechu.sofe3980U.Booking)&quot; because &quot;this.databaseService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.DatabaseService.addBookingDB(com.ontariotechu.sofe3980U.Booking)" because "this.databaseService" is null
 	at com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.testSuccessfulBookingAndTicketPrinting(FlightBookingAndTicketGenerationTest.java:29)
 </error>
