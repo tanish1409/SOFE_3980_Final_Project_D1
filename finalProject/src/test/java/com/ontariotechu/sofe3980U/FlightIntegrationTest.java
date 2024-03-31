@@ -24,15 +24,15 @@ public class FlightIntegrationTest {
 
     @Test
     void testSearchAndDisplayFlightsIntegration() {
-        String[] flightCriteria = {"Toronto", "New York", "2024-04-01", "08:00 AM", "10:00 AM"};
+        String[] flightCriteria = {"Toronto", "New York", "2024-04-01", "2024-04-03", "08:00 AM", "10:00 AM"};
         assertTrue(flightSearch.inputValidation(flightCriteria));
 
         List<Flight> flights = flightSearch.getFlights("Toronto", "New York", "2024-04-01", "08:00 AM",  "10:00 AM");
         assertNotNull(flights);
         assertFalse(flights.isEmpty());
 
-        flightSearch.displayAllFlights(flights);
-        // There is no exsistence of a method displayAllFlights in the UMLLLLLL
+        String ticket = ticketGenerator.printTicket("Toronto", "New York", "08:00 AM", "10:00 AM", true);
+        assertNotNull(ticket);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class FlightIntegrationTest {
     void testTimeFormatPreferenceIntegration() {
         String[][] flights = {{"Toronto", "New York", "08:00 AM", "10:00 AM", "2024-04-01", "2024-04-01"}};
         ticketGenerator.convertTime(0, 1, flights);
-        assertEquals("08:00 AM", flights[0][2]);
-        assertEquals("10:00 AM", flights[0][3]);
+        assertEquals("08:00", flights[0][2]);
+        assertEquals("10:00", flights[0][3]);
     }
 }
