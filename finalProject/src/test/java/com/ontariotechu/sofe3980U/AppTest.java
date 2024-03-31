@@ -253,8 +253,8 @@ public class AppTest
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/validateFlightPlanRound.csv", numLinesToSkip = 1)
-    void validateFlightPlanRoundTripTests(String leg1StartLocation, String leg1EndLocation, String leg1StartTime, String leg1EndTime,
+    @CsvFileSource(resources = "/validateFlightPlanRound3Flights.csv", numLinesToSkip = 1)
+    void validateFlightPlanRoundTripTests3Flights(String leg1StartLocation, String leg1EndLocation, String leg1StartTime, String leg1EndTime,
                                  String leg1StartDate, String leg1EndDate, String leg2StartLocation, String leg2EndLocation,
                                  String leg2StartTime, String leg2EndTime, String leg2StartDate, String leg2EndDate,
                                  String leg3StartLocation, String leg3EndLocation, String leg3StartTime, String leg3EndTime,
@@ -264,7 +264,30 @@ public class AppTest
         // Construct the input directly from CSV row values
         String[][] flightPlan = {
                 {leg1StartLocation, leg1EndLocation, leg1StartTime, leg1EndTime, leg1StartDate, leg1EndDate},
-                {leg2StartLocation, leg2EndLocation, leg2StartTime, leg2EndTime, leg2StartDate, leg2EndDate}
+                {leg2StartLocation, leg2EndLocation, leg2StartTime, leg2EndTime, leg2StartDate, leg2EndDate},
+                {leg3StartLocation, leg3EndLocation, leg3StartTime, leg3EndTime, leg3StartDate, leg3EndDate}
+        };
+
+        // Call the method under test
+        boolean actualResult = roundTrip.validateFlightPlan(flightPlan);
+
+
+        // Assert that the actual result matches the expected result
+        Assertions.assertEquals(expectedResult, actualResult, "The flight plan validation did not produce the expected result.");
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/validateFlightPlanRound2Flights.csv", numLinesToSkip = 1)
+    void validateFlightPlanRoundTripTests2Flights(String leg1StartLocation, String leg1EndLocation, String leg1StartTime, String leg1EndTime,
+                                          String leg1StartDate, String leg1EndDate, String leg2StartLocation, String leg2EndLocation,
+                                          String leg2StartTime, String leg2EndTime, String leg2StartDate, String leg2EndDate,
+                                          boolean expectedResult) {
+        Round_Trip roundTrip = new Round_Trip();
+
+        // Construct the input directly from CSV row values
+        String[][] flightPlan = {
+                {leg1StartLocation, leg1EndLocation, leg1StartTime, leg1EndTime, leg1StartDate, leg1EndDate},
+                {leg2StartLocation, leg2EndLocation, leg2StartTime, leg2EndTime, leg2StartDate, leg2EndDate},
         };
 
         // Call the method under test

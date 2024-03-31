@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.877 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest
-testSuccessfulBookingAndTicketPrinting  Time elapsed: 0.875 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.829 s <<< FAILURE! - in com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest
+testSuccessfulBookingAndTicketPrinting  Time elapsed: 0.828 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.ontariotechu.sofe3980U.DatabaseService.addBookingDB(com.ontariotechu.sofe3980U.Booking)" because "this.databaseService" is null
 	at com.ontariotechu.sofe3980U.FlightBookingAndTicketGenerationTest.testSuccessfulBookingAndTicketPrinting(FlightBookingAndTicketGenerationTest.java:29)
 
