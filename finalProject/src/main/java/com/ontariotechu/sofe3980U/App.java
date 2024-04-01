@@ -37,10 +37,7 @@ public class App {
         String flight2= rdWay.chooseFlight(newarr1);
         displayStringArray(rdWay.addFlight(flight2));
         rdWay.validateFlightPlan(rdWay.getFlightPlan());
-
-
-
-
-
+        Ticket_Generator ticketGenerator = new Ticket_Generator();
+        ticketGenerator.printTicket(rdWay.getFlightPlan());
     }
 }

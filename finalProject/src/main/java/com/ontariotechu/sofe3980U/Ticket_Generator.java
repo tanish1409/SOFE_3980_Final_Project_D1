@@ -38,5 +38,36 @@ public class Ticket_Generator {
 
         return String.format("%02d:%s %s", hour, minutes, amPm);
     }
+
+    public static String printTicket(String[][] flights) {
+        // Check if flights array is not empty
+        if (flights == null || flights.length == 0) {
+            return "No flights to generate ticket for.";
+        }
+
+        StringBuilder ticket = new StringBuilder();
+
+        // Append ticket header
+        ticket.append("--------------------------------------------------\n");
+        ticket.append("                  TICKET                          \n");
+        ticket.append("--------------------------------------------------\n");
+
+        // Append ticket details for each flight
+        for (int i = 0; i < flights.length; i++) {
+            ticket.append("Flight ").append(i + 1).append(":\n");
+            ticket.append("From: ").append(flights[i][0]).append("\n");
+            ticket.append("To: ").append(flights[i][1]).append("\n");
+            ticket.append("Departure Time: ").append(flights[i][2]).append("\n");
+            ticket.append("Arrival Time: ").append(flights[i][3]).append("\n");
+            ticket.append("Departure Date: ").append(flights[i][4]).append("\n");
+            ticket.append("Arrival Date: ").append(flights[i][5]).append("\n\n");
+        }
+
+        // Append ticket footer
+        ticket.append("--------------------------------------------------\n");
+        System.out.println(ticket.toString());
+        return ticket.toString();
+    }
+
 }
 

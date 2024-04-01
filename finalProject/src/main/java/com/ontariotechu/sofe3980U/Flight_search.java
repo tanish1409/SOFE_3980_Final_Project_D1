@@ -15,8 +15,8 @@ public class Flight_search {
     public Flight_search() {
         this.flightOptions = new String[10][6];
         DBArray = new String[][]{
-                {"New York", "Toronto","8:00 AM", "5:00 PM", "2024-03-14", "2024-03-14" },
-                {"Toronto", "Los Angeles", "6:00 PM", "8:00 PM", "2024-03-15", "2024-03-15"},
+                {"New York", "Costa Rica","8:00 AM", "5:00 PM", "2024-03-14", "2024-03-14" },
+                {"Costa Rica", "Los Angeles", "6:00 PM", "8:00 PM", "2024-03-15", "2024-03-15"},
                 {"Toronto", "Idaho", "9:00 AM", "6:00 PM", "2024-03-14", "2024-03-14"},
                 {"Toronto", "Idaho", "10:00 AM", "7:00 PM", "2024-03-14", "2024-03-14"},
                 {"Toronto", "Idaho", "11:00 AM", "8:00 PM", "2024-03-14", "2024-03-14"},
@@ -29,7 +29,7 @@ public class Flight_search {
 
     }
     private SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-    private Set<String> validCities = new HashSet<>(Arrays.asList("New York", "Toronto", "Idaho", "Los Angeles"));
+    private Set<String> validCities = new HashSet<>(Arrays.asList("New York", "Toronto", "Idaho", "Los Angeles", "Costa Rica"));
     public boolean inputValidation(String[] flight){
 
         if (flight == null || flight.length < 6) {

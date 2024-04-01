@@ -10,7 +10,9 @@ public class Round_Trip implements Flight_Book{
     private String flightPlan[][];
 
     public Round_Trip() {
-        this.flightPlan = new String[10][6];}
+        this.flightPlan = new String[10][6];
+    }
+
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
         public boolean validateFlightPlan(String[][] flights){
         if (flights == null || flights.length == 0) {
