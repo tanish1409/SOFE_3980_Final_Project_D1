@@ -3,9 +3,14 @@ package com.ontariotechu.sofe3980U;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
+import java.lang.StringBuilder;
 
 public class Round_Trip implements Flight_Book{
+    private String flightPlan[][];
 
+    public Round_Trip() {
+        this.flightPlan = new String[10][6];}
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
         public boolean validateFlightPlan(String[][] flights){
         if (flights == null || flights.length == 0) {
@@ -123,14 +128,82 @@ public class Round_Trip implements Flight_Book{
     }
 
     public String chooseFlight(String[][] flights) {
-        return null;
+        // Display all flights to the user
+        displayAllFlights(flights);
+
+        // Prompt the user to choose a flight
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please choose a flight by entering the flight number: ");
+        int chosenFlightNumber = scanner.nextInt();
+
+        // Validate the chosen flight number
+        if (chosenFlightNumber < 1 || chosenFlightNumber > flights.length) {
+            System.out.println("Invalid flight number. Please choose a valid flight.");
+            return chooseFlight(flights); // Recursive call until a valid flight number is chosen
+        }
+
+        // Convert the chosen flight details to a string and return
+        StringBuilder chosenFlightDetails = new StringBuilder();
+        String[] chosenFlight = flights[chosenFlightNumber - 1];
+        for (String detail : chosenFlight) {
+            chosenFlightDetails.append(detail).append(" ");
+        }
+        return chosenFlightDetails.toString().trim();
     }
 
     public String[][] addFlight(String flight) {
-        return new String[0][];
+
+        // Split the flight details string into individual pieces of information
+        String[] details = flight.split(" ");
+        String startLoc = details[0]+" " +details[1];
+        String endLoc = details[2]+" "+details[3];
+        String startTime = details[4]+" "+details[5];
+        String endTime = details[6] + " " + details[7];
+        String startDate =details[8];
+        String endDate= details[9];
+        // Create a new 2D array to store the flight plan
+        int rowIndex = -1;
+        for (int i = 0; i < flightPlan.length; i++) {
+            if (flightPlan[i][0] == null) {
+                rowIndex = i;
+                break;
+            }
+        }
+        flightPlan[rowIndex][0]= startLoc;
+        flightPlan[rowIndex][1]= endLoc;
+        flightPlan[rowIndex][2]= startTime;
+        flightPlan[rowIndex][3]= endTime;
+        flightPlan[rowIndex][4]= startDate;
+        flightPlan[rowIndex][5]= endDate;
+        System.out.println(details.length);
+        System.out.println(flightPlan.length);
+        // Return the flight plan array
+        return flightPlan;
+
     }
 
     public void addBookingDB(String[][] flight) {
 
+    }
+    public String[][] getFlights(Flight_search flightSearch) {
+        // Get the flight options directly from the Flight_Search object
+        String[][] flightOptions = flightSearch.getFlightOptions();
+
+        // Create a new 2D array to store all flights with the same dimensions as flightOptions
+        String[][] allFlights = new String[flightOptions.length][flightOptions[0].length];
+
+        // Copy each element from flightOptions to allFlights
+        for (int i = 0; i < flightOptions.length; i++) {
+            for (int j = 0; j < flightOptions[i].length; j++) {
+                allFlights[i][j] = flightOptions[i][j];
+            }
+        }
+
+        // Return the array containing all flights
+        return allFlights;
+    }
+    public String[][] getFlightPlan() {
+
+        return flightPlan;
     }
 }

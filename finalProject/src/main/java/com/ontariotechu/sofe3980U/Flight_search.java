@@ -7,10 +7,27 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
-
+import java.util.ArrayList;
 
 public class Flight_search {
+    private String[][] flightOptions;
+    private String[][] DBArray;
+    public Flight_search() {
+        this.flightOptions = new String[10][6];
+        DBArray = new String[][]{
+                {"New York", "Toronto","8:00 AM", "5:00 PM", "2024-03-14", "2024-03-14" },
+                {"Toronto", "Los Angeles", "6:00 PM", "8:00 PM", "2024-03-15", "2024-03-15"},
+                {"Toronto", "Idaho", "9:00 AM", "6:00 PM", "2024-03-14", "2024-03-14"},
+                {"Toronto", "Idaho", "10:00 AM", "7:00 PM", "2024-03-14", "2024-03-14"},
+                {"Toronto", "Idaho", "11:00 AM", "8:00 PM", "2024-03-14", "2024-03-14"},
+                {"Toronto", "Idaho", "12:00 AM", "9:00 PM", "2024-03-14", "2024-03-14"},
+                {"Toronto", "Idaho", "7:00 AM", "10:00 PM", "2024-03-14", "2024-03-14"},
+                {"New York", "Los Angeles","7:00 AM", "4:00 PM", "2024-03-14", "2024-03-14" },
+                {"New York", "Los Angeles","6:00 AM", "3:00 PM", "2024-03-14", "2024-03-14" },
+                {"New York", "Los Angeles","5:00 AM", "2:00 PM", "2024-03-14", "2024-03-14" }
+        };
 
+    }
     private SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     private Set<String> validCities = new HashSet<>(Arrays.asList("New York", "Toronto", "Idaho", "Los Angeles"));
     public boolean inputValidation(String[] flight){
@@ -71,5 +88,27 @@ public class Flight_search {
         }
 
         return String.format("%02d:%02d", hour, minute);
+    }
+    public String[][] getFlightOptions() {
+
+        return flightOptions;
+    }
+    public void queryDB(String startLocation, String endLocation) {
+        List<String[]> result = new ArrayList<>();
+        for (String[] row : DBArray) {
+            if (result.size() >= 10) {
+                break; // Stop searching once 10 flights are found
+            }
+            if (row.length >= 6 && row[0].equalsIgnoreCase(startLocation) && row[1].equalsIgnoreCase(endLocation)) {
+                result.add(row);
+            }
+        }
+        // Update flightOptions with the query result
+        for (int i = 0; i < result.size(); i++) {
+            String[] row = result.get(i);
+            for (int j = 0; j < row.length && j < 6; j++) {
+                flightOptions[i][j] = row[j];
+            }
+        }
     }
 }
