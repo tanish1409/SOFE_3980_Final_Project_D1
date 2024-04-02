@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
 	<title>Available Flights</title>
 </head>
+
 <body>
 <h2>Available Flights</h2>
 <form action="#" th:action="@{/printTickets}" method="post">
@@ -16,11 +18,13 @@
 			<li>Departure Date: <span th:text="${flight[4]}"></span></li>
 			<li>Arrival Date: <span th:text="${flight[5]}"></span></li>
 		</ul>
-		<input type="checkbox" name="selectedFlights" th:value="${flight[0]} + ' ' + ${flight[1]} + ' ' + ${flight[2]} + ' ' + ${flight[3]} + ' ' + ${flight[4]} + ' ' + ${flight[5]}" />
+		<input type="checkbox" name="selectedFlights"
+			   th:value="${flight[0]} + ' ' + ${flight[1]} + ' ' + ${flight[2]} + ' ' + ${flight[3]} + ' ' + ${flight[4]} + ' ' + ${flight[5]}" />
 		<label>Select This Flight</label>
-		<hr/>
+		<hr />
 	</div>
 	<button type="submit">Print Selected Tickets</button>
 </form>
 </body>
+
 </html>
