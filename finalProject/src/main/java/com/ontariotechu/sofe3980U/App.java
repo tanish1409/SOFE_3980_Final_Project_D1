@@ -38,6 +38,6 @@ public class App {
         displayStringArray(rdWay.addFlight(flight2));
         rdWay.validateFlightPlan(rdWay.getFlightPlan());
         Ticket_Generator ticketGenerator = new Ticket_Generator();
-        ticketGenerator.printTicket(rdWay.getFlightPlan());
+        //ticketGenerator.printTicket(rdWay.getFlightPlan());
     }
 }
