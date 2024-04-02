@@ -25,8 +25,8 @@ public class FlightsController {
         Flight_search flightSearch = new Flight_search();
         try {
             flightSearch.queryDB(from, to);
-            String[][] flights = flightSearch.getFlightOptions();
             flightSearch.removeEmptyFlights();
+            String[][] flights = flightSearch.getFlightOptions();
             if (flights == null || flights.length == 0) {
                 // Using a model attribute to send a message back to the search page
                 model.addAttribute("message", "No flights found.");
