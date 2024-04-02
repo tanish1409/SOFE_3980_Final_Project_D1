@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Printed Tickets</title>
+</head>
+<body>
+<h2>Printed Tickets</h2>
+<div th:each="ticket : ${tickets}">
+	<pre th:text="${ticket}"></pre>
+	<hr/>
+</div>
+</body>
+</html>
