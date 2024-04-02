@@ -10,17 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class HelloController {
+public class FlightsController {
 
-    @GetMapping("/hello")
-    public String home(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-
-        model.addAttribute("name", name);
-
-        return "hello";
-    }
     private final Flight_search flightSearch = new Flight_search();
-    private final Round_Trip roundTrip = new Round_Trip(); // Assume this handles both round and one-way trips for simplicity
+    private final Round_Trip roundTrip = new Round_Trip();
 
     @GetMapping("/")
     public String searchPage() {
