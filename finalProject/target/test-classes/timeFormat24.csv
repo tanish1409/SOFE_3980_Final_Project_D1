@@ -1,3 +1,0 @@
-﻿StartLocation,EndLocation,StartTime,EndTime,StartDate,EndDate,ExpectedStartLocation,ExpectedEndLocation,ExpectedStartTime,ExpectedEndTime,ExpectedStartDate,ExpectedEndDate
-New York,Los Angeles,08:00 AM,05:00 PM,2024-03-14,2024-03-15,New York,Los Angeles,08:00,17:00,2024-03-14,2024-03-15
-London,Paris,09:30 AM,06:30 PM,2024-03-14,2024-03-15,London,Paris,09:30,18:30,2024-03-14,2024-03-15

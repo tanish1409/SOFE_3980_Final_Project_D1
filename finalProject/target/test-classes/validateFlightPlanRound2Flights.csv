@@ -1,3 +1,0 @@
-﻿Leg1StartLocation,Leg1EndLocation,Leg1StartTime,Leg1EndTime,Leg1StartDate,Leg1EndDate,Leg2StartLocation,Leg2EndLocation,Leg2StartTime,Leg2EndTime,Leg2StartDate,Leg2EndDate,ExpectedResult
-New York,Los Angeles,08:00 AM,05:00 PM,2024-03-14,2024-03-15,Los Angeles,New York,08:00 PM,11:00 PM,2024-03-19,2024-03-19,true
-New York,Los Angeles,08:00 AM,05:00 PM,2024-03-14,2024-03-15,Toronto,Idaho,08:00 PM,11:00 PM,2024-03-19,2024-03-19,false
