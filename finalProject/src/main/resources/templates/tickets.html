@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Printed Tickets</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 40px;
+			background-color: #f0f0f0;
+			color: #333;
+		}
+		.ticket-container {
+			max-width: 600px;
+			margin: 20px auto;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+			padding: 20px;
+			margin-bottom: 30px;
+		}
+		.ticket-container:hover {
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+			transform: translateY(-5px);
+		}
+		.ticket-header {
+			border-bottom: 1px solid #dddddd;
+			padding: 10px;
+			margin-bottom: 10px;
+			text-align: center;
+			background-color: #007bff;
+			color: white;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+		.ticket-body {
+			padding: 15px;
+		}
+		.flight-detail {
+			margin: 10px 0;
+			font-size: 16px;
+			color: #333;
+		}
+		.flight-detail span {
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<h2>Printed Tickets</h2>
+<div th:each="ticketHtml : ${tickets}">
+	<div th:utext="${ticketHtml}"></div>
+</div>
+</body>
+</html>

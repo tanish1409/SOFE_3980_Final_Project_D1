@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Search Flights</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 40px;
+			background-color: #f9f9f9;
+			color: #333;
+		}
+		form {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+		label {
+			margin-right: 10px;
+		}
+		input[type="text"] {
+			padding: 8px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		button {
+			background-color: #007BFF;
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+
+
+<body>
+<h2>Search for a Flight</h2>
+<h4>To test functionality, search flight that depart from "Toronto" and Arrive in "Idaho" as database is small</h4>
+<form action="#" th:action="@{/search}" method="post">
+	<label for="from">Departure: </label>
+	<input type="text" id="from" name="from">
+	<label for="to">Arrival: </label>
+	<input type="text" id="to" name="to">
+	<button type="submit">Search</button>
+</form>
+
+<div th:if="${message}">
+	<p th:text="${message}"></p>
+</div>
+</body>
+
+</html>

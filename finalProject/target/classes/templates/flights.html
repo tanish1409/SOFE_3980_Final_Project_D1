@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Available Flights</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 40px;
+			background-color: #f9f9f9;
+			color: #333;
+		}
+		form {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		li {
+			margin: 5px 0;
+		}
+		label {
+			display: block;
+			margin: 20px 0 10px;
+		}
+		input[type="checkbox"] {
+			margin-right: 10px;
+		}
+		button {
+			background-color: #28a745;
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #218838;
+		}
+	</style>
+</head>
+
+
+<body>
+<h2>Available Flights</h2>
+<form action="#" th:action="@{/printTickets}" method="post">
+	<div th:each="flight, iterStat : ${flights}">
+		<p>Flight #[[${iterStat.index + 1}]]:</p>
+		<ul>
+			<li>From: <span th:text="${flight[0]}"></span></li>
+			<li>To: <span th:text="${flight[1]}"></span></li>
+			<li>Departure Time: <span th:text="${flight[2]}"></span></li>
+			<li>Arrival Time: <span th:text="${flight[3]}"></span></li>
+			<li>Departure Date: <span th:text="${flight[4]}"></span></li>
+			<li>Arrival Date: <span th:text="${flight[5]}"></span></li>
+		</ul>
+		<input type="checkbox" name="selectedFlights"
+			   th:value="${flight[0]} + ' ' + ${flight[1]} + ' ' + ${flight[2]} + ' ' + ${flight[3]} + ' ' + ${flight[4]} + ' ' + ${flight[5]}" />
+		<label>Select This Flight</label>
+		<hr />
+	</div>
+	<button type="submit">Print Selected Tickets</button>
+</form>
+</body>
+
+</html>

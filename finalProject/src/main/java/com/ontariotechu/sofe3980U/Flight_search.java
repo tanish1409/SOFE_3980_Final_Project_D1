@@ -111,4 +111,27 @@ public class Flight_search {
             }
         }
     }
+    public void removeEmptyFlights() {
+        List<String[]> tempList = new ArrayList<>(); // Temporary list to hold non-empty flights
+
+        for (String[] flight : flightOptions) {
+            boolean isEmptyFlight = true; // Assume the flight is empty until proven otherwise
+
+            for (String field : flight) {
+                if (field != null && !field.trim().isEmpty()) {
+                    // If any field is not null and not empty, the flight is not empty
+                    isEmptyFlight = false;
+                    break; // No need to check the rest of the fields
+                }
+            }
+
+            if (!isEmptyFlight) {
+                // If the flight is not empty, add it to the temporary list
+                tempList.add(flight);
+            }
+        }
+
+        // Convert the temporary list back to the array and update flightOptions
+        flightOptions = tempList.toArray(new String[0][0]); // Adjust the size dynamically based on the tempList content
+    }
 }

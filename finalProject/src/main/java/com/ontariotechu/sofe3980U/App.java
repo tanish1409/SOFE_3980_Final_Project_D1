@@ -1,9 +1,9 @@
 package com.ontariotechu.sofe3980U;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * Hello world!
- *
- */
+
+@SpringBootApplication
 public class App {
 
     public static void displayStringArray(String[][] array) {
@@ -24,20 +24,20 @@ public class App {
         }
     }
     public static void main(String[] args) {
-
+        SpringApplication.run(App.class, args);
         //just to test working
-        Flight_search flightSearch = new Flight_search();
-        flightSearch.queryDB("New York", "Los Angeles");
-        String[][] newarr = flightSearch.getFlightOptions();
-        Round_Trip rdWay = new Round_Trip();
-        String[][] newarr1 = rdWay.getFlights(flightSearch);
-        rdWay.displayAllFlights(newarr1);
-        String flight1 = rdWay.chooseFlight(newarr1);
-        displayStringArray(rdWay.addFlight(flight1));
-        String flight2= rdWay.chooseFlight(newarr1);
-        displayStringArray(rdWay.addFlight(flight2));
-        rdWay.validateFlightPlan(rdWay.getFlightPlan());
-        Ticket_Generator ticketGenerator = new Ticket_Generator();
-        ticketGenerator.printTicket(rdWay.getFlightPlan());
+//        Flight_search flightSearch = new Flight_search();
+//        flightSearch.queryDB("New York", "Los Angeles");
+//        String[][] newarr = flightSearch.getFlightOptions();
+//        Round_Trip rdWay = new Round_Trip();
+//        String[][] newarr1 = rdWay.getFlights(flightSearch);
+//        rdWay.displayAllFlights(newarr1);
+//        String flight1 = rdWay.chooseFlight(newarr1);
+//        displayStringArray(rdWay.addFlight(flight1));
+//        String flight2= rdWay.chooseFlight(newarr1);
+//        displayStringArray(rdWay.addFlight(flight2));
+//        rdWay.validateFlightPlan(rdWay.getFlightPlan());
+//        Ticket_Generator ticketGenerator = new Ticket_Generator();
+//        ticketGenerator.printTicket(rdWay.getFlightPlan());
     }
 }
