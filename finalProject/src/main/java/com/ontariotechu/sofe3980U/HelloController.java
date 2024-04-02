@@ -59,18 +59,37 @@ public class HelloController {
 
     @PostMapping("/printTickets")
     public String printSelectedTickets(@RequestParam List<String> selectedFlights, Model model) {
-        List<String> tickets = new ArrayList<>();
+        List<String> ticketsHtml = new ArrayList<>();
         for (String flightDetails : selectedFlights) {
             // Assuming flightDetails is a concatenated string of flight information
-            // You might need to split it and create a proper structure that your ticket generator expects
-            String[] flightArray = flightDetails.split(" ");
-            String[][] selectedFlight = new String[1][6];
-            System.arraycopy(flightArray, 0, selectedFlight[0], 0, 6);
+            String[] flightArray = flightDetails.split("\\s+", 6); // Split by whitespace but limit to 6 elements
+            String[][] selectedFlight = new String[1][];
+            selectedFlight[0] = flightArray;
 
-            String ticket = Ticket_Generator.printTicket(selectedFlight); // Adjust this call according to your actual method signature
-            tickets.add(ticket);
+            // Generate the HTML content for the ticket here
+            String ticketHtml = generateTicketHtml(selectedFlight);
+            ticketsHtml.add(ticketHtml);
         }
-        model.addAttribute("tickets", tickets);
+        model.addAttribute("tickets", ticketsHtml);
         return "tickets"; // HTML page to show all the printed tickets
     }
+
+    private String generateTicketHtml(String[][] flightDetails) {
+        StringBuilder ticketHtml = new StringBuilder();
+        ticketHtml.append("<div class=\"ticket-container\">");
+        ticketHtml.append("<div class=\"ticket-header\"><h3>TICKET</h3></div>");
+        ticketHtml.append("<div class=\"ticket-body\">");
+        ticketHtml.append("<div class=\"flight-detail\"><span>Flight #1:</span></div>");
+        ticketHtml.append("<div class=\"flight-detail\"><span>From:</span> ").append(flightDetails[0][0]).append("</div>");
+        ticketHtml.append("<div class=\"flight-detail\"><span>To:</span> ").append(flightDetails[0][1]).append("</div>");
+        ticketHtml.append("<div class=\"flight-detail\"><span>Departure Time:</span> ").append(flightDetails[0][2]).append("</div>");
+        ticketHtml.append("<div class=\"flight-detail\"><span>Arrival Time:</span> ").append(flightDetails[0][3]).append("</div>");
+        ticketHtml.append("<div class=\"flight-detail\"><span>Departure Date:</span> ").append(flightDetails[0][4]).append("</div>");
+        ticketHtml.append("<div class=\"flight-detail\"><span>Arrival Date:</span> ").append(flightDetails[0][5]).append("</div>");
+        ticketHtml.append("</div></div>");
+
+        return ticketHtml.toString();
+    }
+
+
 }
