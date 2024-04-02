@@ -22,6 +22,7 @@ public class FlightsController {
 
     @PostMapping("/search")
     public String searchFlights(@RequestParam String from, @RequestParam String to, Model model) {
+        Flight_search flightSearch = new Flight_search();
         try {
             flightSearch.queryDB(from, to);
             String[][] flights = flightSearch.getFlightOptions();
