@@ -29,4 +29,4 @@ jobs:
     - name: Run specific tests
       run: |
         cd finalProject
-        mvn -B test -Dtest=com.ontariotechu.sofe3980U.*Test
+        mvn test
