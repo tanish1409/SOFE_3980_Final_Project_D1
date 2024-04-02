@@ -101,7 +101,7 @@ public class One_Way implements Flight_Book {
         }
     }
 
-    @Override
+    @Override /// this implementation will need to be updated with the introduction of a UI (drop down menu select)
     public String chooseFlight(String[][] flights) {
         // Display all flights to the user
         displayAllFlights(flights);
@@ -159,7 +159,7 @@ public class One_Way implements Flight_Book {
     }
     @Override
     public void addBookingDB(String[][] flight) {
-
+            /// are we establishing a temp db? are we going to be setting up a demo array?
     }
 
     public String[][] getFlights(Flight_search flightSearch) {

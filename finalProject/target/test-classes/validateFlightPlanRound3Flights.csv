@@ -1,0 +1,4 @@
+﻿Leg1StartLocation,Leg1EndLocation,Leg1StartTime,Leg1EndTime,Leg1StartDate,Leg1EndDate,Leg2StartLocation,Leg2EndLocation,Leg2StartTime,Leg2EndTime,Leg2StartDate,Leg2EndDate,Leg3StartLocation,Leg3EndLocation,Leg3StartTime,Leg3EndTime,Leg3StartDate,Leg3EndDate,ExpectedResult
+New York,Los Angeles,08:00 AM,05:00 PM,2024-03-14,2024-03-15,Los Angeles,Idaho,04:00 PM,07:00 PM,2024-03-15,2024-03-15,Idaho,New York,06:00 PM,07:00 PM,2024-03-19,2024-03-19,false
+New York,Los Angeles,08:00 AM,05:00 PM,2024-03-14,2024-03-15,Los Angeles,Idaho,05:15 PM,08:15 PM,2024-03-15,2024-03-15,Idaho,New York,06:00 PM,07:00 PM,2024-03-19,2024-03-19,false
+New York,Los Angeles,08:00 AM,05:00 PM,2024-03-14,2024-03-15,Los Angeles,Idaho,05:15 PM,08:15 PM,2024-03-17,2024-03-17,Idaho,New York,06:00 PM,07:00 PM,2024-03-19,2024-03-19,false

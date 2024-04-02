@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.testng.ITest;
 
 public class FlightIntegrationTest {
 
@@ -20,7 +21,7 @@ public class FlightIntegrationTest {
         ticketGenerator = new Ticket_Generator();
     }
 
-    @Test
+    ITest
     void testSearchAndDisplayFlightsIntegration() {
 
         flightSearch.queryDB("New York", "Los Angeles");
