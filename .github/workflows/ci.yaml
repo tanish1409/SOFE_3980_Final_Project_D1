@@ -4,15 +4,9 @@ on:
   push:
     branches:
       - kunal_springboot
-    # Optional: paths filter if you want to run only when specific files change
-    # paths:
-    #   - 'finalProject/src/test/java/com/ontariotechu/sofe3980U/**'
   pull_request:
     branches:
       - main
-    # Optional: paths filter for PRs as well
-    # paths:
-    #   - 'finalProject/src/test/java/com/ontariotechu/sofe3980U/**'
 
 jobs:
   build-and-test:
@@ -26,7 +20,13 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: Change directory
+      run: cd finalProject
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: |
+        cd finalProject
+        mvn -B package --file pom.xml
     - name: Run specific tests
-      run: mvn test
+      run: |
+        cd finalProject
+        mvn -B test -Dtest=com.ontariotechu.sofe3980U.*Test
